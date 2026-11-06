@@ -90,3 +90,12 @@ content:
       - name: metaDescription
         label: Google description (one or two sentences)
         type: text
+      - name: bookButtonText
+        label: "First button text (for example: Book a Haircut)"
+        type: string
+      - name: workButtonText
+        label: "Second button text (for example: See the Work)"
+        type: string
+      - name: footerName
+        label: "Name in the footer"
+        type: string
