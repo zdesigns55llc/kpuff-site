@@ -1,39 +1,72 @@
 {
-  "siteTitle": "KPuff | Barber in Colorado Springs",
-  "metaDescription": "KPuff is a barber in Colorado Springs, CO. Burst fades, skin fades, tapers, line-ups and beard work. Request your booking online.",
+  "badge": "BOOKS CLOSED",
   "businessName": "KPuff",
-  "badge": "BOOKS ARE OPEN",
   "tagline": "Precision fades & fresh cuts • Colorado Springs, CO",
   "heroImage": "/images/hero.jpg",
   "heroAlt": "KPuff, barber in Colorado Springs",
-  "bookButtonText": "Book a Haircut",
-  "workButtonText": "See the Work",
-  "stripItems": ["Burst Fades", "Tapers", "Line-Ups", "Beard Work"],
+  "stripItems": [
+    "Burst Fades",
+    "Tapers",
+    "Line-Ups",
+    "Beard Work"
+  ],
   "workHeading": "The Work",
   "workIntro": "Fresh off the chair. Clean blends, sharp lines, no shortcuts.",
   "gallery": [
-    { "title": "Burst Fade", "image": "/images/work-burst-fade.jpg" },
-    { "title": "Skin Fade", "image": "/images/work-skin-fade.jpg" },
-    { "title": "Taper", "image": "/images/work-taper.jpg" },
-    { "title": "Line-Up", "image": "" },
-    { "title": "Waves", "image": "" },
-    { "title": "Kids Cut", "image": "" }
+    {
+      "title": "Burst Fade",
+      "image": "/images/work-burst-fade.jpg"
+    },
+    {
+      "title": "Skin Fade",
+      "image": "/images/work-skin-fade.jpg"
+    },
+    {
+      "title": "Taper",
+      "image": "/images/work-taper.jpg"
+    },
+    {
+      "title": "Line-Up"
+    },
+    {
+      "title": "Waves"
+    },
+    {
+      "title": "Kids Cut"
+    }
   ],
   "servicesHeading": "Services",
   "servicesIntro": "Message for pricing and availability.",
   "services": [
-    { "name": "Burst Fade", "description": "The signature look, blended clean." },
-    { "name": "Skin / Bald Fade", "description": "Down to the skin, smooth transition." },
-    { "name": "Taper", "description": "Classic and low-maintenance." },
-    { "name": "Line-Up", "description": "Crisp edges to finish any cut." },
-    { "name": "Beard Trim", "description": "Shaped and sharpened." },
-    { "name": "Kids Cut", "description": "Patient, quick, and fresh." }
+    {
+      "name": "Burst Fade",
+      "description": "The signature look, blended clean."
+    },
+    {
+      "name": "Skin / Bald Fade",
+      "description": "Down to the skin, smooth transition."
+    },
+    {
+      "name": "Taper",
+      "description": "Classic and low-maintenance."
+    },
+    {
+      "name": "Line-Up",
+      "description": "Crisp edges to finish any cut."
+    },
+    {
+      "name": "Beard Trim",
+      "description": "Shaped and sharpened."
+    },
+    {
+      "name": "Kids Cut",
+      "description": "Patient, quick, and fresh."
+    }
   ],
   "bookingHeading": "Book Your Spot",
   "bookingIntro": "Send your request and KPuff will confirm your time.",
-  "bookingPhone": "",
-  "messengerLink": "",
-  "footerName": "KPUFF",
   "footerCity": "Colorado Springs, CO",
-  "footerLinkText": "Message Kaliq on Facebook"
+  "footerLinkText": "Message Kaliq on Facebook",
+  "siteTitle": "KPuff | Barber in Colorado Springs",
+  "metaDescription": "KPuff is a barber in Colorado Springs, CO. Burst fades, skin fades, tapers, line-ups and beard work. Request your booking online."
 }
