@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{siteTitle}}</title>
+<meta name="description" content="{{metaDescription}}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="ring"><img src="{{heroImage}}" alt="{{heroAlt}}"></div>
+  <span class="pill">{{badge}}</span>
+  <h1>{{businessName}}</h1>
+  <p>{{tagline}}</p>
+  <a class="btn" href="#book">{{bookButtonText}}</a><a class="btn ghost" href="#work">{{workButtonText}}</a>
+</header>
+<div class="strip">{{stripItems}}</div>
+
+<main class="wrap">
+  <section id="work">
+    <h2>{{workHeading}}</h2>
+    <p class="sub">{{workIntro}}</p>
+    <div class="grid">
+{{gallery}}
+    </div>
+  </section>
+
+  <section>
+    <h2>{{servicesHeading}}</h2>
+    <p class="sub">{{servicesIntro}}</p>
+    <div class="svcs">
+{{services}}
+    </div>
+  </section>
+
+  <section id="book">
+    <h2>{{bookingHeading}}</h2>
+    <p class="sub">{{bookingIntro}}</p>
+    <form id="f">
+      <label>Your name<input id="n" required placeholder="First &amp; last name"></label>
+      <div class="row">
+        <label>Service<select id="s">{{serviceOptions}}</select></label>
+        <label>Your phone<input id="p" type="tel" placeholder="(719) 555-0123"></label>
+      </div>
+      <div class="row">
+        <label>Preferred day<input id="d" type="date"></label>
+        <label>Preferred time<select id="t"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label>
+      </div>
+      <label>Notes (style, reference photo, etc.)<textarea id="m" rows="3"></textarea></label>
+      <button class="btn" type="submit">Send Booking Request</button>
+      <p class="note" id="msg"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <span class="bebas">{{footerName}}</span>
+  {{footerCity}}<br><br>
+  <a id="fb" href="#">{{footerLinkText}}</a>
+</footer>
+
+<script>
+// Set automatically from content/site.json (bookingPhone and messengerLink)
+var PHONE = {{phoneJson}};
+var FB_MESSENGER = {{messengerJson}};
+{{bookingScript}}
+</script>
+</body>
+</html>
