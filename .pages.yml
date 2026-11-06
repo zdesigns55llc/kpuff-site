@@ -1,0 +1,92 @@
+# Pages CMS configuration: controls what the site owner can edit.
+# Layout, colors and animations are NOT editable here on purpose.
+media:
+  input: images
+  output: /images
+  extensions: [jpg, jpeg, png, webp]
+  rename: safe
+
+content:
+  - name: site
+    label: Website content
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: badge
+        label: Badge at the top (e.g. BOOKS ARE OPEN)
+        type: string
+      - name: businessName
+        label: Business name (big title)
+        type: string
+      - name: tagline
+        label: Line under the name
+        type: string
+      - name: heroImage
+        label: Round profile photo
+        type: image
+      - name: heroAlt
+        label: Profile photo description (for screen readers and Google)
+        type: string
+      - name: stripItems
+        label: Highlight words (the strip under the top section)
+        type: string
+        list: true
+      - name: workHeading
+        label: Photo section title
+        type: string
+      - name: workIntro
+        label: Photo section sentence
+        type: string
+      - name: gallery
+        label: Photos of your work (leave the photo empty to show "photo coming soon")
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Name under the photo
+            type: string
+          - name: image
+            label: Photo
+            type: image
+      - name: servicesHeading
+        label: Services section title
+        type: string
+      - name: servicesIntro
+        label: Services section sentence (pricing note goes here)
+        type: string
+      - name: services
+        label: Services (these also fill the booking form's Service menu)
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Service name
+            type: string
+          - name: description
+            label: Short description
+            type: string
+      - name: bookingHeading
+        label: Booking section title
+        type: string
+      - name: bookingIntro
+        label: Booking section sentence
+        type: string
+      - name: bookingPhone
+        label: Phone number that receives booking texts
+        type: string
+      - name: messengerLink
+        label: Facebook Messenger link (https://m.me/yourname)
+        type: string
+      - name: footerCity
+        label: City shown at the bottom
+        type: string
+      - name: footerLinkText
+        label: Text of the Facebook link at the bottom
+        type: string
+      - name: siteTitle
+        label: Browser tab / Google title
+        type: string
+      - name: metaDescription
+        label: Google description (one or two sentences)
+        type: text
